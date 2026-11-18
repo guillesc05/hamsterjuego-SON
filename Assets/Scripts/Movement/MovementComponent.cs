@@ -49,7 +49,7 @@ public class MovementComponent : MonoBehaviour
 
     public bool IsMoving()
     {
-        return _rb.velocity.magnitude > _threshold;
+        return _rb.linearVelocity.magnitude > _threshold;
     }
     #endregion
 
@@ -80,7 +80,7 @@ public class MovementComponent : MonoBehaviour
                 _rb.AddForceAtPosition(_moveDir.x * forceDir * _strength, forcePosition);
             else _rb.AddForceAtPosition(_moveDir.x * forceDir * _airStrength, forcePosition);
 
-            _rb.velocity = new Vector2(Mathf.Clamp(_rb.velocity.x, -_maxSpeed, _maxSpeed), _rb.velocity.y); 
+            _rb.linearVelocity = new Vector2(Mathf.Clamp(_rb.linearVelocity.x, -_maxSpeed, _maxSpeed), _rb.linearVelocity.y); 
         }
     }
 

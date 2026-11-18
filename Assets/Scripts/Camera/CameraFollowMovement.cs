@@ -5,17 +5,16 @@ using UnityEngine;
 public class CameraFollowMovement : MonoBehaviour
 {
     [SerializeField] private Transform _hamsterCenter; //El objeto center del hamster
-    [SerializeField] private float _verticalOffset;
 
-    private void Update()
+    private void FixedUpdate()
     {
-        float verticalTarget = _hamsterCenter.position.y;
-        float horizontalTarget = _hamsterCenter.position.x;
+        Vector3 camPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Vector3 targetPosition = new Vector3(_hamsterCenter.position.x, _hamsterCenter.position.y, transform.position.z);
 
         transform.position = 
             Vector3.Lerp(
-                transform.position, 
-                new Vector3(horizontalTarget,verticalTarget + _verticalOffset, -10), 
-                Time.deltaTime * 4);
+                camPosition, 
+                targetPosition, 
+                4f * Time.deltaTime);
     }
 }

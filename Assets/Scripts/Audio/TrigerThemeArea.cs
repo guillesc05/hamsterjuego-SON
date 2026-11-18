@@ -11,11 +11,11 @@ public class TrigerThemeArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.attachedRigidbody.velocity.y < 0)
+        if (collision.attachedRigidbody.linearVelocity.y < 0)
         {
             _playMusic1.Invoke();
         }
-        else if(collision.attachedRigidbody.velocity.y > 0)
+        else if(collision.attachedRigidbody.linearVelocity.y > 0)
         {
             _stopMusic1.Invoke();
         }
@@ -24,11 +24,11 @@ public class TrigerThemeArea : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.attachedRigidbody.velocity.y < 0)
+        if (collision.attachedRigidbody.linearVelocity.y < 0)
         {
             _stopMusic2.Invoke();
         }
-        else if (collision.attachedRigidbody.velocity.y > 0)
+        else if (collision.attachedRigidbody.linearVelocity.y > 0)
         {
             _playMusic2.Invoke();
         }
