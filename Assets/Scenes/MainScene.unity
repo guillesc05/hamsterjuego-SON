@@ -7706,13 +7706,60 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6565184717736063383, guid: 8c8855c1e96a7a54e982c97d41c9b8c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1889794598}
   m_SourcePrefab: {fileID: 100100000, guid: 8c8855c1e96a7a54e982c97d41c9b8c5, type: 3}
 --- !u!1 &1889794597 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6565184717736063383, guid: 8c8855c1e96a7a54e982c97d41c9b8c5, type: 3}
   m_PrefabInstance: {fileID: 1889794596}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1889794598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889794597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa656eaca627ed5dea5658153b313b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RollingAudioEmitter
+  _movementEvent:
+    Guid:
+      Data1: 744382203
+      Data2: 1215116993
+      Data3: -86709110
+      Data4: -1260372469
+    Path: event:/Rolling
+  _parameterName: Surface
+  _groundDetector: {fileID: 1889794602}
+  _movementComponent: {fileID: 1889794605}
+--- !u!114 &1889794602 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2254754156484803652, guid: 8c8855c1e96a7a54e982c97d41c9b8c5, type: 3}
+  m_PrefabInstance: {fileID: 1889794596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889794597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9aee4f3315df304f99105f9ba92ec99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1889794605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5258026655281922094, guid: 8c8855c1e96a7a54e982c97d41c9b8c5, type: 3}
+  m_PrefabInstance: {fileID: 1889794596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889794597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec326ec5607aff429b95d5cf6b81263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1890742395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7978,6 +8025,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4096187351189058671, guid: 14069f3f4a1c6a3449644380b1959d07, type: 3}
   m_PrefabInstance: {fileID: 1934586414}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1951387378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 28265805877614416, guid: f00def41d49b9f442811f6e06a7fbe21, type: 3}
+  m_PrefabInstance: {fileID: 2028256480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1951387379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951387378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1001 &1960721450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8436,10 +8502,14 @@ PrefabInstance:
       propertyPath: _playerCenter
       value: 
       objectReference: {fileID: 1336584344}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8742488928506561512, guid: f00def41d49b9f442811f6e06a7fbe21, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 28265805877614416, guid: f00def41d49b9f442811f6e06a7fbe21, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1951387379}
   m_SourcePrefab: {fileID: 100100000, guid: f00def41d49b9f442811f6e06a7fbe21, type: 3}
 --- !u!1001 &2032817923
 PrefabInstance:
