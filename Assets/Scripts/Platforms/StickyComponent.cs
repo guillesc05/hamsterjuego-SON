@@ -17,7 +17,6 @@ public class StickyComponent : MonoBehaviour
         {
             if (janterMufmen != null)
             {
-                Debug.Log(transform.up.normalized);
                 ConstantForce2D janterGraviti = other.GetComponent<ConstantForce2D>();
 
                 janterGraviti.force = transform.up.normalized * 300;
